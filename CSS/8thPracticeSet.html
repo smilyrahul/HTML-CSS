@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8th Practice sets</title>
+    <!-- 1.Create a header using css grid -->
+
+    <!-- 2. Create a layouts using grid reference from ch6 practice -->
+
+    <!-- 3. create a webpage which is green on large devices , red on medium devices & yellow on small devices -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+      }
+      header {
+        background-color: black;
+        color: aliceblue;
+      }
+      li {
+        list-style: none;
+        margin: 13px;
+        padding: 0 8px;
+      }
+      .container{
+        background-color: aqua;
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: space-around; 
+        border-radius: 12px; 
+      }
+      .left{
+        background-color: blanchedalmond;
+        width: 30vh;
+        height: 35vh;
+        border-radius: 12px; 
+        text-align: center;
+        
+    }
+    .right{
+        background-color: violet;
+        width: 30vh;
+        height: 35vh;
+        border-radius: 12px; 
+        text-align: center;
+      }
+      @media screen and (max-width: 1080px) {
+        .container{
+            background-color: aqua;
+        }
+    }
+    @media screen and (max-width: 700px) {
+        .container{
+            background-color: green;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .container{
+            background-color: yellow;
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>Home</li>
+        <li>about</li>
+        <li>contact</li>
+      </ul>
+    </header>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut velit,
+      inventore amet adipisci tempore eligendi voluptates incidunt voluptatem
+      non reiciendis deleniti dolor corrupti vero eaque laborum dolorum. Quo
+      accusamus minus placeat nisi libero reiciendis.
+    </p>
+    <div class="container">
+        <div class="left"> i am left</div>
+        <div class="right">i am right</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clear property</title>
+    <!-- clear property used for clear the direction of Div which had already used float property  -->
+
+    <!-- kindly check box 2. it will clear your right side -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .bx1 {
+        width: 200px;
+        height: 150px;
+        background-color: violet;
+        float: right;
+      }
+      .bx2 {
+        width: 200px;
+        height: 150px;
+        background-color: yellow;
+        float: right;
+        clear: right;
+        /* clear:both; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bx1">box1</div>
+    <div class="bx2">box2</div>
+  </body>
+</html>

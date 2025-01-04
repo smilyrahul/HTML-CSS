@@ -1,0 +1,65 @@
+<!--
+        2. Create the same layout in que 1 using flexbox
+    -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6, 7(2) practice set</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        color: white;
+      }
+      ul {
+        padding: 34px;
+      }
+
+      li {
+        list-style: none;
+        display: inline;
+        padding: 0 25px;
+      }
+      .left {
+        width: 40vw;
+        height: 40vh;
+        background-color: violet;
+        text-align: center;
+        
+      }
+      .right {
+        width: 40vw;
+        height: 40vh;
+        background-color: gray;
+        text-align: center;
+        
+      }
+      .container{
+        display: flex;
+        justify-content: space-between;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="left">i am left</div>
+      <div class="right">i am left</div>
+    </div>
+    
+  </body>
+</html>

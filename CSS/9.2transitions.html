@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transition</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .main {
+        background-color: violet;
+        height: 300px;
+      }
+      .box {
+        display: inline-block;
+        border: 2px solid blue;
+      }
+      img {
+        width: 255px;
+        /* transition-property: width;
+        transition-duration: 3s;
+        transition-timing-function: ease-in;
+        transition-delay: 2s; */
+        transition: width 3s ease-in-out 2s;  /*sorthand for upper property */
+      }
+      img:hover {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <img src="/images/images.jpg" X alt="" />
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float items  Property</title>
+        <!--
+              Flex - items propertys
+              1.order ('check in box 1')
+              2.align items ('check in box 1')
+              3.align self ('check in box 3')
+              4.flex grow 
+              5. flex shrink(manage overflow)
+
+         -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        background-color: crimson;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
+        
+         
+      }
+      .box1 {
+        background-color: blue;
+        border: 1px solid black;
+        height: 134px;
+        width: 345px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         order: 2; /*("box 1 order has 2 but it went last bcz box1 has order and other box doesn;t have any order values like box2=4 , box4=1 ") */
+      }
+      .box2 {
+        height: 134px;
+        width: 345px;
+        background-color: red;
+        border: 1px solid black;
+        
+      }
+      .box3 {
+        height: 134px;
+        width: 345px;
+        background-color: red;
+        border: 1px solid black;
+        align-self:flex-start;
+        
+      }
+      .box4 {
+        height: 134px;
+        width: 345px;
+        background-color: red;
+        border: 1px solid black;
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">box1</div>
+      <div class="box2">box2</div>
+      <div class="box3">box3</div>
+      <div class="box4">box4</div>
+    </div>
+  </body>
+</html>

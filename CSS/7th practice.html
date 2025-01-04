@@ -1,0 +1,77 @@
+<!-- 
+                3. Create a navigation bar using flexbox
+             -->
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>7th practice set</title>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          header {
+            background-color: black;
+            color: white;
+          }
+          nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+          }
+          nav img{
+            padding-right: 20px;
+          }
+          ul {
+            padding: 34px;
+          }
+    
+          li {
+            list-style: none;
+            display: inline;
+            padding: 0 25px;
+          }
+          .left {
+            width: 40vw;
+            height: 40vh;
+            background-color: violet;
+            text-align: center;
+            
+          }
+          .right {
+            width: 40vw;
+            height: 40vh;
+            background-color: gray;
+            text-align: center;
+            
+          }
+          .container{
+            display: flex;
+            justify-content: space-around;
+          }
+          
+        </style>
+      </head>
+      <body>
+        <header>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>contact</li>
+            </ul>
+            <img src="/images/profile.webp" width="40px" height="40px" alt="image">
+          </nav>
+        </header>
+        <div class="container">
+          <div class="left">i am left</div>
+          <div class="right">i am left</div>
+        </div>
+    
+        
+      </body>
+    </html>
+    

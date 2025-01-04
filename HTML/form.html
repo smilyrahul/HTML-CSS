@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Reg</title>
+  </head>
+  <body>
+    <div>
+      <h1>Goa trip</h1>
+      <form action="form.php">
+        <input type="text" placeholder="Ener your name" />
+        <input type="text" placeholder="Ener your age" /><br />
+        <h2>Gender</h2>
+        <label for="male">
+            <input type="radio"
+              value="sectionid"
+              name="section"
+              id="sectionida"
+            />
+            male 
+            <label for="female">
+                <input type="radio"
+                  value="sectionid"
+                  name="section"
+                  id="sectionida"
+                />
+                female
+                <label for="others">
+                    <input type="radio"
+                      value="sectionid"
+                      name="section"
+                      id="sectionida"
+                    />
+                    others
+
+
+         <h2>choose your trip</h2>
+         <label for="sectionid">
+            <input type="radio"
+              value="sectionid"
+              name="section"
+              id="sectionida"
+            />
+            GOA
+        <label for="sectionid">
+          <input type="radio"
+            value="sectionid"
+            name="section"
+            id="sectionida"
+          />
+          Goa + Gokarna
+        </label>
+        <label for="sectionid">
+          <input
+            type="radio"
+            value="sectionid"
+            name="section"
+            id="sectionidb"
+          />
+          Goa + Ooty <br />
+          <h2>Enter your email   & phone number </h2>
+          <input type="email" id="mail" placeholder="enter your email">
+          <input type="tel" id="phone" placeholder="phone number">
+         
+          <h2>Select food item</h2>
+        </label>
+        <label for="checkbox"></label>
+        <input type="checkbox" name="food " id="foodcard" class="red" />Biryani
+        <label for="checkbox"></label>
+        <input type="checkbox" name="food " id="foodcard" class="red" /> Biryani
+        with colddrink
+        <input type="checkbox" name="food " id="foodcard" class="red" /> Naan +
+        chicken
+        <input type="checkbox" name="food " id="foodcard" class="red" /> Naan + panner
+        <input type="checkbox" name="food " id="foodcard" class="red" /> Icecream
+        <h3>Choose date</h3>
+        <input type="date" name="choose date" id="date" />
+        <h3>Transport option</h3>
+        <select name="transport option " id="transport option">
+          <option value="transport option">Bus</option>
+          <option value="transport option">train</option>
+          <option value="transport option">Car</option>
+          <option value="transport option">Bike</option>
+          <option value="transport option">flight</option>
+          <option value="transport option">lauda</option>
+        </select><br>
+
+        <br> 
+        <textarea name="text" id="textarea" cols="50" rows="10" placeholder="how do you know about this trip "></textarea>
+         <br><br>
+         <input type="submit">
+         <input type="reset">
+      </form>
+    </div>
+  </body>
+</html>

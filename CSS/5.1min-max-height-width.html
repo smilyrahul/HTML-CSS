@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min-max-height-width</title>
+    <style>
+        .min{
+            width: 44vh;
+            height: 20vh;
+            background-color: red;
+             min-height: 50vh;
+             min-width: 30vh;
+             /*you can't give height less than 50 & width less than 30 */
+        }
+        .max{
+            width: 100vh;
+            height: 120vh;
+            background-color: aqua;
+            max-height: 80vh;
+            max-width: 50vh;
+            /*you can't give height more than 80 & width more than 50 */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="min">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex numquam assumenda quod totam temporibus voluptates necessitatibus repellendus fugit consectetur doloribus eos, facilis corporis, eveniet earum, aliquid esse debitis porro recusandae laborum. Distinctio!
+    </div>
+    <div class="max">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, aperiam? Odio explicabo harum ipsa dicta numquam, magni dolores assumenda illo id.
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoxSize</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .bxsz2 {
+        /* margin: 20px; */
+        padding: 6px;
+        height: 20px;
+        width: 100%;
+        border: 5px solid grey;
+        background-color: aqua;
+        box-sizing: border-box;
+        /* <!--borderbox==  padding + border are included--> */
+        
+      }
+      .bxsz1 {
+        background-color: red;
+        margin: 30px;
+        /* padding: 5px; */
+        height: 2000px;
+        width: 233px;
+        border: 2px solid black;
+        
+      }
+      .bxsz3 {
+        margin: 12px;
+        padding: 5px;
+        height: 200px;
+        width: 100%;
+        border: 8px solid black;
+         box-sizing: content-box; /*borderbox==  padding + border are included */
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="bxsz1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem cum alias natus, officiis laboriosam laudantium voluptatem magnam explicabo! Quaerat iusto blanditiis perspiciatis voluptates beatae, quisquam optio, similique itaque hic sunt tempora qui illum quidem.
+
+        <div class="bxsz2"></div>
+        <div class="bxsz3"></div>
+      </div>
+      
+    </div>
+  </body>
+</html>

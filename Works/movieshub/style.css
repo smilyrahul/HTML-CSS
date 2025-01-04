@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  padding: 0px 20px;
+  font-size: 1.3rem;
+}
+.left{
+  width: 50vw;
+}
+
+.left h2{
+ color: blueviolet;
+ font-size: 2.5rem;
+}
+nav .right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50vw;
+}
+.right button{
+  background-color: blueviolet;
+  color: #fff;
+  padding: 3px 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.right img{
+  display: none;
+}
+
+@media (max-width:750px) {
+nav .right{
+  width: auto;
+}
+.right p, button{
+  display: none;
+}
+.right img{
+  display: block;
+}
+
+  
+}

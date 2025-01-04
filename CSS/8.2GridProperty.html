@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid css</title>
+    <!-- 1. column Property
+     -->
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .container{
+            display: grid;
+            background-color: yellow;
+            height: 40vh;
+            padding: 10px;
+            /* grid-row-gap: 15px;
+            grid-column-gap: 5px; */
+            grid-gap: 15px 25px;
+             grid-template-columns: auto auto auto ;
+             /*  how many column u want that mant time u     have to write "Auto" */
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .container2{
+            display: grid;
+            background-color:red ;
+            height: 40vh;
+            padding: 10px;
+            grid-gap: 5px;
+            grid-template-columns: 300px 150px  auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container2">
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position fixed</title>
+    <!--look the differnce in  box2-->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        height: 4444px;
+      }
+      
+      li {
+        display: inline ;
+      }
+      header {
+        height: 70px;
+        background-color: black;
+        color: white;
+        position: sticky;
+        top: 0;
+      }
+      .container {
+        margin: auto;
+        width: 50vh;
+        height: 50vh;
+        text-align: center;
+        background-color: aqua;
+        border: 2px solid red;
+      }
+      p {
+        width: 350px;
+        margin: 4px;
+        padding: 2px;
+        border: 1px solid black;
+        position: relative;
+      }
+      
+      .box1{
+        width: 20px;
+        height: 2vh;
+        border: 2px solid black;
+        position: relative;
+        bottom: 55px; 
+        left:360px;
+        border-radius: 12px;
+
+        background-color: yellowgreen;
+      }
+      .box2{
+        width:20vh;
+        height: 25vh;
+        background-color: blue;
+        position: fixed;
+        bottom: 15px;
+        left: 1px;  
+        
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus
+        asperiores explicabo molestiae minus sunt illo, odit porro eaque
+        pariatur vitae.
+      </p>
+      <div class="box1">
+          
+      </div>
+      <div class="box2"></div>
+    </div>
+  </body>
+</html>

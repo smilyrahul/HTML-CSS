@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizes units (vw,vh) in css</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        font-size: 14px;
+      }
+      .boxem{
+        font-size: 2em; /* "em" work as parent element font size */
+      }
+      .boxrem {
+        font-size: 2rem; /*rem work as html tags font size */
+      }
+      .boxvwvh {
+        background-color: blue;
+        width: 50vw;
+        height: 50vh;
+      }
+      .boxper {
+        
+        height: 50%;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>This is paragraph</p>
+      <div class="boxem">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+        distinctio vel, voluptatum aperiam corrupti perferendis.
+      </div>
+    </div>
+    <div class="boxrem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laboriosam.
+    </div>
+    <div class="boxvwvh">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laboriosam.
+    </div>
+    <div class="boxper">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, laboriosam.
+    </div>
+  </body>
+</html>
