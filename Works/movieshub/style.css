@@ -2,29 +2,33 @@
   margin: 0;
   padding: 0;
 }
-nav{
+body{
+  /* overflow-y: hidden; */
+}
+nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  padding: 0px 20px;
+  padding: 0px 30px;
   font-size: 1.3rem;
+  border-bottom: 1px solid rgba(137, 43, 226, 0.303);
 }
-.left{
+.left {
   width: 50vw;
 }
 
-.left h2{
- color: blueviolet;
- font-size: 2.5rem;
+.left h2 {
+  color: blueviolet;
+  font-size: 2.5rem;
 }
-nav .right{
+nav .right {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 50vw;
 }
-.right button{
+.right button {
   background-color: blueviolet;
   color: #fff;
   padding: 3px 6px;
@@ -32,20 +36,93 @@ nav .right{
   border-radius: 5px;
   cursor: pointer;
 }
-.right img{
+.right img {
   display: none;
 }
-
-@media (max-width:750px) {
-nav .right{
-  width: auto;
-}
-.right p, button{
-  display: none;
-}
-.right img{
-  display: block;
+.content {
+  height: 80vh;
+  display: flex;
+ 
 }
 
+.contentleft {
+  height: 100%;
+  width: 50vw;
+  padding: 40px 80px;
+}
+.contentleft h1 {
+  font-size: 4vw;
+  width: 80%;
+}
+.contentleft h1 span {
+  color: blueviolet;
+}
+.contentleft p {
+  font-size: 2.5vh;
+  width: 75%;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  color: rgba(46, 5, 85, 0.845);
+}
+.contentleft button {
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+  padding: 2vh;
+  border-radius: 5px;
+}
+.contentright {
+  height: 100%;
+  width: 50vw;
+}
+.contentright img{
+  height: 330px;
+  padding-top: 4vh;
+}
+
+@media (max-width: 750px) {
+  nav {
+    background-color: rgba(137, 43, 226, 0.555);
+    height: 10vh;
+  }
+  nav .right {
+    width: auto;
+  }
+  .right p {
+    display: none;
+  }
+  .right button {
+    display: none;
+  }
+  .right img {
+    display: block;
+  }
+  .content{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  .contentleft{
+    /* height: 50%; */
+    width: 100%;
+  }
+  .contentleft h1{
+   font-size: 6vh;
+  }
   
+  .contentleft p{
+    font-size: 2.4vh;
+  }
+  .contentleft .btn{
+  font-size: 2.5vh;    
+  }
+  .contentright {
+    width: 100vw;
+  }
+  .contentright img{
+    width: 70vw;
+    padding-left: 50px;
+  }
 }
